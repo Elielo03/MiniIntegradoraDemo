@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.school.controller.AlumnoListController"
+            stylesheets="@../css/alumno_list.css">
+
+    <top>
+        <HBox styleClass="navbar" spacing="10" >
+            <Button fx:id="btnBack" text="← Dashboard" />
+        </HBox>
+    </top>
+
+    <center>
+        <VBox spacing="10" >
+            <Button fx:id="btnCreate" text="CREAR ALUMNO →" styleClass="nav-btn"/>
+            <TableView fx:id="tableAlumnos" prefHeight="400">
+                <columns>
+                    <TableColumn fx:id="colId"         text="ID"            prefWidth="50"/>
+                    <TableColumn fx:id="colNombre"     text="Nombre"        prefWidth="120"/>
+                    <TableColumn fx:id="colApellidos"  text="Apellidos"     prefWidth="150"/>
+                    <TableColumn fx:id="colFecha"      text="Nacimiento"    prefWidth="110"/>
+                    <TableColumn fx:id="colCorreo"     text="Correo"        prefWidth="200"/>
+                    <TableColumn fx:id="colCarrera"    text="Carrera"       prefWidth="120"/>
+                    <TableColumn fx:id="colAsignaturas" text="Asignaturas"  prefWidth="200"/>
+                    <TableColumn fx:id="colAcciones"   text="Acciones"      prefWidth="200"/>
+                </columns>
+
+            </TableView>
+
+        </VBox>
+    </center>
+
+</BorderPane>

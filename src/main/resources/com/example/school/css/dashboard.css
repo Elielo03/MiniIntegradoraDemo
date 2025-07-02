@@ -1,0 +1,30 @@
+/* Barra superior */
+#navbar {
+    -fx-background-color: white;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Botón de logout */
+.btn-logout {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333;
+    -fx-font-size: 14;
+    -fx-cursor: hand;
+}
+
+/* Botones de navegación */
+.nav-btn {
+    -fx-pref-width: 160;
+    -fx-pref-height: 45;
+    -fx-background-color: linear-gradient(to right, #5b8def, #6f9fff);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+/* Hover en botones de navegación */
+.nav-btn:hover {
+    -fx-background-color: linear-gradient(to right, #4a7cd1, #5e8be3);
+}
