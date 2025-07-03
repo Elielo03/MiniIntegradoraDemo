@@ -10,7 +10,8 @@
 <BorderPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.school.controller.DashboardController"
-            stylesheets="@../css/dashboard.css">
+            stylesheets="@../css/dashboard.css"
+            prefHeight="400.0" prefWidth="600.0">
 
     <top>
         <HBox fx:id="navbar" alignment="CENTER_RIGHT" spacing="10" >
