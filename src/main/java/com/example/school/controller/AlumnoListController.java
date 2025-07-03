@@ -5,14 +5,21 @@ import com.example.school.model.Alumno;
 import com.example.school.model.Asignatura;
 import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.collections.FXCollections;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.layout.HBox;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.time.format.DateTimeFormatter;
@@ -94,5 +101,25 @@ public class AlumnoListController implements Initializable {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @FXML
+    private void onCreateAlumno(ActionEvent event)  {
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource("/com/example/school/views/alumno_form.fxml")
+        );
+        try{
+            Parent root = loader.load();
+            Stage dialog = new Stage();
+            dialog.initOwner(((Node) event.getSource()).getScene().getWindow());
+            dialog.initModality(Modality.APPLICATION_MODAL);
+            dialog.setTitle("Crear Alumno");
+            dialog.setScene(new Scene(root));
+            dialog.showAndWait();
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
+        }
+
     }
 }
