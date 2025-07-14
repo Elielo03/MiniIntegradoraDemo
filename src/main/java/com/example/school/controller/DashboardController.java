@@ -36,6 +36,16 @@ public class DashboardController  {
         stage.setScene(scene);
     }
 
+    @FXML
+    private void onACamera(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(
+                getClass().getResource("/com/example/school/views/photo.fxml")
+        );
+        Scene scene = new Scene(loader.load());
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+    }
+
 
 
 

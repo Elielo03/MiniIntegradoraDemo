@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f96d1630-45bf-4ec2-a8a4-d05795737636" name="Changes" comment="Create read de alumno">
+    <list default="true" id="f96d1630-45bf-4ec2-a8a4-d05795737636" name="Changes" comment=" se agregan archivos al git ignore">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/school/controller/CameraController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/school/views/photo.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/school/config/DBConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/school/config/DBConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/school/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/school/controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/school/dao/IAlumnoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/school/dao/IAlumnoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/school/dao/impl/AlumnoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/school/dao/impl/AlumnoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/school/model/Alumno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/school/model/Alumno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/school/views/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/school/views/Dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="FxmlFile" />
         <option value="CSS File" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -26,18 +36,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Elielo03"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Elielo03&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Elielo03/MiniIntegradoraDemo.git",
-    "accountId": "6f301603-53f0-40f3-b1c2-b9354cec2b2a"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Elielo03/MiniIntegradoraDemo.git&quot;,
+    &quot;accountId&quot;: &quot;3096773e-76f3-4640-b769-edc529af75a1&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -49,7 +59,6 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2ywWf0D7UGvRSRQo1yb1nufwHdZ" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,7 +68,9 @@
     "Application.AlumnoDao.executor": "Run",
     "Application.DBConnection.executor": "Run",
     "Application.HelloApplication.executor": "Run",
+    "Application.Run SchoolApp.executor": "Run",
     "Maven.School [clean,install].executor": "Run",
+    "Maven.School [clean].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
@@ -72,7 +83,11 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
     "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -85,10 +100,11 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
+      <command value="mvn clean" />
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.HelloApplication">
+  <component name="RunManager" selected="Application.Run SchoolApp">
     <configuration name="AlumnoDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.school.dao.impl.AlumnoDao" />
       <module name="School" />
@@ -116,8 +132,10 @@
       </method>
     </configuration>
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.example.school.HelloApplication" />
-      <module name="School" />
+      <module name="MiniIntegradoraDemo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.school.*" />
@@ -128,6 +146,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Run SchoolApp" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.example.school.HelloApplication" />
+      <module name="School" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Run SchoolApp" />
+      <item itemvalue="Application.AlumnoDao" />
+      <item itemvalue="Application.DBConnection" />
+      <item itemvalue="Application.HelloApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.HelloApplication" />
@@ -139,8 +170,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-125ca727e0f0-intellij.indexing.shared.core-IU-243.23654.117" />
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-IU-243.23654.117" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26927.53" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-IU-251.26927.53" />
       </set>
     </attachedChunks>
   </component>
@@ -157,6 +188,9 @@
       <workItem from="1751098191855" duration="2601000" />
       <workItem from="1751158556005" duration="12316000" />
       <workItem from="1751438328572" duration="8402000" />
+      <workItem from="1751949751842" duration="1051000" />
+      <workItem from="1752120344563" duration="614000" />
+      <workItem from="1752440908593" duration="3582000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit con el proyecto">
       <option name="closed" value="true" />

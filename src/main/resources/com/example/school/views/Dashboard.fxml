@@ -37,6 +37,10 @@
 
             </Button>
 
+            <Button fx:id="btnPhoto" text="Tomar Foto"  styleClass="nav-btn" onAction="#onACamera">
+
+            </Button>
+
         </HBox>
     </center>
 

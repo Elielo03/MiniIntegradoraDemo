@@ -5,6 +5,7 @@ module com.example.school {
     requires org.controlsfx.controls;
     requires org.kordamp.bootstrapfx.core;
     requires java.sql;
+    requires opencv;
 
     opens com.example.school to javafx.fxml;
     opens com.example.school.controller to javafx.fxml;

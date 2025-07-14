@@ -8,6 +8,7 @@ import com.example.school.model.Asignatura;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -104,6 +105,19 @@ public class AlumnoDao implements IAlumnoDao {
              PreparedStatement ps = con.prepareStatement(sql)) {
             ps.setInt(1, id);
             ps.executeUpdate();
+        }
+    }
+
+    public void updatePhotoPath(int id, String path) throws Exception {
+        String sql = "UPDATE alumno SET path=? WHERE id=?";
+        try (Connection con = DBConnection.getConnection();
+             PreparedStatement ps = con.prepareStatement(sql)) {
+            ps.setString(1, path);
+            ps.setInt(2, id);
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
 

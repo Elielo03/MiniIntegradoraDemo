@@ -11,4 +11,5 @@ public interface IAlumnoDao {
     void    create(Alumno a) throws Exception;
     void    update(Alumno a) throws Exception;
     void    delete(int id) throws Exception;
+     void updatePhotoPath(int id, String path) throws Exception;
 }
