@@ -1,6 +1,7 @@
 package com.example.school.dao.impl;
 
 import com.example.school.config.DBConnection;
+import com.example.school.config.DBConnectionSqlite;
 import com.example.school.dao.IAlumnoDao;
 import com.example.school.model.Alumno;
 import com.example.school.model.Asignatura;
@@ -17,7 +18,7 @@ public class AlumnoDao implements IAlumnoDao {
         String sql = "select * from alumno";
         List<Alumno> alumnos = new ArrayList<>();
         try {
-            Connection con = DBConnection.getConnection();
+            Connection con = DBConnectionSqlite.getConnection();
             PreparedStatement ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
@@ -26,7 +27,8 @@ public class AlumnoDao implements IAlumnoDao {
 
                 alumno.setNombre(rs.getString("nombres"));
                 alumno.setApellidos(rs.getString("apellidos"));
-                alumno.setFechaNacimiento(rs.getDate("fecha_nacimiento").toLocalDate());
+                String fn = rs.getString("fecha_nacimiento"); // "2000-05-10"
+                alumno.setFechaNacimiento(fn != null ? java.time.LocalDate.parse(fn) : null);
                 alumno.setIdCarrera(rs.getInt("id_carrera"));
                 alumno.setCorreo(rs.getString("correo"));
                 alumno.setAsignaturas(getAsignaturasByAlumno(alumno));
@@ -68,12 +70,12 @@ public class AlumnoDao implements IAlumnoDao {
     public void create(Alumno a) throws Exception {
         String sql = "INSERT INTO alumno (nombres, apellidos, fecha_nacimiento, correo, id_carrera) "
                 + "VALUES (?,?,?,?,?)";
-        try (Connection con = DBConnection.getConnection();
+        try (Connection con = DBConnectionSqlite.getConnection();
              PreparedStatement ps = con.prepareStatement(sql)) {
 
             ps.setString(1, a.getNombre());
             ps.setString(2, a.getApellidos());
-            ps.setDate(3, java.sql.Date.valueOf(a.getFechaNacimiento()));
+            ps.setString(3, a.getFechaNacimiento().toString()); // "YYYY-MM-DD"
             ps.setString(4, a.getCorreo());
             ps.setInt(5, a.getIdCarrera());
             ps.executeUpdate();

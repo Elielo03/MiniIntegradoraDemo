@@ -1,6 +1,7 @@
 package com.example.school.dao.impl;
 
 import com.example.school.config.DBConnection;
+import com.example.school.config.DBConnectionSqlite;
 import com.example.school.dao.ICarreraDao;
 import com.example.school.model.Carrera;
 
@@ -17,7 +18,7 @@ public class CarreraDao implements ICarreraDao {
         String sql = "select * from carrera";
         List<Carrera> carreras = new ArrayList<>();
         try {
-            Connection con = DBConnection.getConnection();
+            Connection con = DBConnectionSqlite.getConnection();
             PreparedStatement ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {

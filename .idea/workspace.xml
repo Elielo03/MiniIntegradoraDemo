@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f96d1630-45bf-4ec2-a8a4-d05795737636" name="Changes" comment="Create read de alumno">
+      <change afterPath="$PROJECT_DIR$/db/school_exam.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/school/config/DBConnectionSqlite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/school/lib/sqlite-jdbc-3.50.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/school/school_exam.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/school/views/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/school/views/Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/school/dao/impl/AlumnoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/school/dao/impl/AlumnoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/school/dao/impl/CarreraDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/school/dao/impl/CarreraDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/school/dao/impl/UsuarioDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/school/dao/impl/UsuarioDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,18 +33,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Elielo03"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Elielo03&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Elielo03/MiniIntegradoraDemo.git",
-    "accountId": "6f301603-53f0-40f3-b1c2-b9354cec2b2a"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Elielo03/MiniIntegradoraDemo.git&quot;,
+    &quot;accountId&quot;: &quot;6f301603-53f0-40f3-b1c2-b9354cec2b2a&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -58,6 +65,7 @@
   "keyToString": {
     "Application.AlumnoDao.executor": "Run",
     "Application.DBConnection.executor": "Run",
+    "Application.DBConnectionSqlite.executor": "Run",
     "Application.HelloApplication.executor": "Run",
     "Maven.School [clean,install].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -65,18 +73,26 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Win10/Documents/MiniIntegradoraDemo/School",
+    "last_opened_file_path": "C:/Users/Win10/Documents/MiniIntegradoraDemo/School/src/main/java/com/example/school/db",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Win10\Documents\MiniIntegradoraDemo\School\src\main\java\com\example\school\db" />
+      <recent name="C:\Users\Win10\Documents\MiniIntegradoraDemo\School\src\main\java\com\example\school\lib" />
+      <recent name="C:\Users\Win10\Documents\MiniIntegradoraDemo\School\src\main\java\com\example\school" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Win10\Documents\SchoolJavaFX\School\src\main\resources\com\example\school\views" />
       <recent name="C:\Users\Win10\Documents\SchoolJavaFX\School\src\main\java\com\example\school\ui\views" />
@@ -115,6 +131,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DBConnectionSqlite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.school.config.DBConnectionSqlite" />
+      <module name="School" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.school.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.school.HelloApplication" />
       <module name="School" />
@@ -131,6 +160,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.HelloApplication" />
+        <item itemvalue="Application.DBConnectionSqlite" />
         <item itemvalue="Application.AlumnoDao" />
         <item itemvalue="Application.DBConnection" />
       </list>
@@ -206,7 +236,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/school/dao/impl/CarreraDao.java</url>
-          <line>19</line>
+          <line>20</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
