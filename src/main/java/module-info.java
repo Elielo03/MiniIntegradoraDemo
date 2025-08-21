@@ -6,6 +6,7 @@ module com.example.school {
     requires org.kordamp.bootstrapfx.core;
     requires org.xerial.sqlitejdbc;
     requires java.sql;
+    requires opencv;
 
     opens com.example.school to javafx.fxml;
     opens com.example.school.controller to javafx.fxml;

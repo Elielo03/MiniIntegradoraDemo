@@ -11,6 +11,7 @@ public class Alumno {
     private String correo;
     private List<Asignatura> asignaturas;
     private int idCarrera;
+    private String path;
 
     public Alumno() {
 
@@ -71,5 +72,13 @@ public class Alumno {
 
     public void setCorreo(String correo) {
         this.correo = correo;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
     }
 }

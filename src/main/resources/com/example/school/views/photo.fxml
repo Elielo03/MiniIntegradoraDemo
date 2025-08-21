@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.school.CameraController">
+
+    <center>
+        <ImageView fx:id="imageView" fitWidth="600" preserveRatio="true"/>
+    </center>
+
+    <bottom>
+        <HBox spacing="10" alignment="CENTER">
+            <Button fx:id="btnCapture" text="Capturar Foto" onAction="#onCapture"/>
+        </HBox>
+    </bottom>
+</BorderPane>
